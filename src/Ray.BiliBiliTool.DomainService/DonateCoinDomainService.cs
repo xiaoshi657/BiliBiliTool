@@ -102,7 +102,7 @@ namespace Ray.BiliBiliTool.DomainService
 
                 _logger.LogDebug("正在为视频“{title}”投币", video.Item2);
 
-                bool re = DoAddCoinForVideo(video.Item1, 1, _dailyTaskOptions.SelectLike, video.Item2);
+                bool re = true;//DoAddCoinForVideo(video.Item1, 1, _dailyTaskOptions.SelectLike, video.Item2);
                 if (re) success++;
             }
 
